@@ -8,11 +8,13 @@ fun main(args: Array<String>) {
     val q = Question();
     q.display();
     println("The answer to the question \"${q.Question}\" is ${q.Answer}")
+    val message =
     if(q.Answer == q.CorrectAnswer) {
-        println("You were correct");
+       "You were correct"
     } else {
-        println("Try again?");
+        "Try again?"
     }
+    println(message);
 }
 
 fun printName(name: String) {
